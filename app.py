@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 
 # load the model from disk
-loaded_model=pickle.load(open('xg_random_model.pkl', 'rb'))
+loaded_model=pickle.load(open('random_forest_regression_model.pkl', 'rb'))
 app = Flask(__name__)
 
 @app.route('/')
@@ -21,4 +21,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+	app.run(debug=True)
